@@ -6,7 +6,7 @@ const endpoint = 'https://api.chucknorris.io/jokes/random';
 function getFact() {
     fetch(endpoint)
         .then(response => response.json())
-        .then(data => console.log(data.value))
+        .then(data => displayFact(data.value))
 }
 
 function displayFact(fact){
